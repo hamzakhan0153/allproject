@@ -1,0 +1,211 @@
+Task 1 a
+// let days = [
+//   'Sunday',
+//   'Monday',
+//   'Tuesday',
+//   'Wednesday',
+//   'Thursday',
+//   'Friday',
+//   'Saturday',
+// ];
+// let da = new Date();
+// let dayName = days[da.getDay()];
+// console.log(dayName);
+
+// Task 1 b
+
+// let time = new Date();
+// console.log(
+//   `Current time is : ${time.toLocaleString('Pk', {
+//     hour: 'numeric',
+//     hour12: true,
+//     minute: 'numeric',
+//     second: 'numeric',
+//   })}`
+// );
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task : 2. Write a JavaScript program to get the current date.
+// Expected Output :
+// mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+// const d = new Date();
+// let months = [
+//   'Jan',
+//   'Feb',
+//   'Mar',
+//   'Apr',
+//   'May',
+//   'June',
+//   'July',
+//   'Aug',
+//   'Sept',
+//   'Oct',
+//   'Nov',
+//   'Dec',
+// ];
+// console.log(`${months[d.getMonth()]}-${d.getDay()}-${d.getFullYear()}`);
+// console.log(`${d.getDay()}-${months[d.getMonth()]}-${d.getFullYear()}`);
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 3. Write a JavaScript program to find the area of a triangle where lengths of the
+// three of its sides are 5, 6, 7
+// let side1 = 5;
+// let side2 = 6;
+// let side3 = 7;
+// let s = (side1 + side2 + side3) / 2;
+// var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
+// console.log(area);
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 4. Write a JavaScript program to rotate the string 'Saylani' in
+// right direction by periodically removing one letter from the end of the string and attaching it to the front. ;
+
+// let word = 'Saylani';
+// let newArray = word.split('');
+// let letter = newArray.pop();
+// let newWord = newArray.unshift(letter);
+// let theWord = newArray.join('');
+// console.log(theWord);
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 5. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar
+
+// const year = prompt('Enter a year:');
+// if ((0 == year % 4 && 0 != year % 100) || 0 == year % 400) {
+//   console.log(year + ' is a leap year');
+// } else {
+//   console.log(year + ' is not a leap year');
+// }
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 6. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+
+// let year;
+// for (year = 2014; year <= 2050; year++) {
+//   var d = new Date(year, 0, 1);
+//   if (d.getDay() === 0) {
+//     console.log('The first day of ' + year + ' is a Sunday');
+//   }
+// }
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 7. Write a JavaScript program where the program takes a random Number between 1 to 10,
+// the user is then prompted to input a guess number. If the user input matches with guess number,
+// the program will display a message "Good Work" otherwise display a message "Not matched".
+
+// const num = Math.ceil(Math.random() * 10);
+// console.log(num);
+// const userEntervalue = prompt('Guess the number between 1 and 10 inclusive');
+// userEntervalue == num
+//   ? alert('Matched')
+//   : alert('Not matched, the number was ' + userEntervalue);
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 8. Write a JavaScript program to calculate days left until next 14 August.
+
+// today = new Date();
+// let see = new Date(today.getFullYear(), 07, 04);
+// if (today.getMonth() == 07 && today.getDate() > 04) {
+//   see.setFullYear(cmas.getFullYear() + 1);
+// }
+// var one_day = 1000 * 60 * 60 * 24;
+// console.log(
+//   Math.ceil((cmas.getTime() - today.getTime()) / one_day) +
+//     ' days left until Nexr 14 August!'
+// );
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 9. Write a JavaScript program to calculate multiplication and division of two numbers.
+
+// let num1 = prompt('Enter number one for Multiplication');
+// let num2 = prompt('Enter nuumber Second for Multiplication');
+// let res = Number(num1) * Number(num2);
+// alert(`Your Multiplication is ${res}`);
+
+// let num1 = prompt('Enter number one for Division');
+// let num2 = prompt('Enter nuumber Second for Division');
+// let res = Number(num1) * Number(num2);
+// alert(`Your Division is ${res}`);
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+
+// let cTemp = prompt('Enter Value to convert in Celcius');
+// let cToFahr = (cTemp * 9) / 5 + 32;
+// let message = cTemp + '\xB0C is ' + cToFahr + ' \xB0F.';
+// alert(`Your Value in Celcius is ${message}`);
+
+// let fTemp = prompt('Enter Value to Convert in Farhennits');
+// let fToCel = ((fTemp - 32) * 5) / 9;
+// let message = fTemp + '\xB0F is ' + fToCel + '\xB0C.';
+// alert(`Your Value in Farhennite is ${message}`);
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 11. Write a JavaScript program to compute the sum of the two given Numbers.
+// If the two values are same, then returns triple their sum
+
+// let num1 = prompt('Enter First Number For Addition');
+// let num2 = prompt('Enter Second Number For Addition');
+// let res = Number(num1) + Number(num2);
+// if (num1 === num2) {
+//   alert(`Your Tripple sum is : ${res * 3}`);
+// } else {
+//   alert(`Your Sum is : ${res}`);
+// }
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 12. Write a JavaScript program to check whether a given Number is within 20 of 100 or 400
+// let num = prompt('Enter Number to check');
+// if (Math.abs(100 - num) <= 20 || Math.abs(400 - num) <= 20) {
+//   alert('is within 20 of 100 or 400 ');
+// } else {
+//   alert('is not within 20 of 100 or 400');
+// }
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 13. Write a JavaScript program to find the largest of three given Numbers.
+// let max_val = prompt('Enter Bigger Number');
+// let x;
+// let y;
+// let z;
+// if (x > y) {
+//   max_val = x;
+// } else {
+//   max_val = y;
+// }
+// if (z > max_val) {
+//   max_val = z;
+// }
+// alert(max_val);
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Task 14. Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+// let inp = prompt('Enter Your Text');
+// inp
+//   .toLowerCase()
+//   .split(' ')
+//   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+//   .join(' ');
+
+// console.log(inp);
+// -----------------------------------------------------------------------------------------------------------------
+//  Task 15 Write a JavaScript program to convert a given days to hours and minutes.
+// i.e: 1 day equals 24h
+
+// let time = prompt('Enter Days to convert in hours');
+// alert(`${time * 24} hours`);
